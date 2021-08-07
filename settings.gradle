@@ -1,0 +1,2 @@
+rootProject.name = "Volio_Test_App"
+include ':app'

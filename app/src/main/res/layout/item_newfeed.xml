@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fafafa"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Arsenal mua thành công Madison và Haland bằng cách trả góp với số tiền 3 triệu bảng"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toStartOf="@id/image_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+    <ImageView
+        android:id="@+id/image_2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_3"
+        app:layout_constraintStart_toEndOf="@+id/image_1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+    <ImageView
+        android:id="@+id/image_3"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+
+    <TextView
+        android:id="@+id/tvPublished_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="01/08/2021"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_1"
+        android:layout_marginBottom="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

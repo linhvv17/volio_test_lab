@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/newsFeedFragment">
+    <fragment
+        android:id="@+id/newsFeedFragment"
+        android:name="com.example.volio_test_app.ui.fragments.NewsFeedFragment"
+        android:label="NewsFeedFragment" >
+        <action
+            android:id="@+id/action_newsFeedFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.volio_test_app.ui.fragments.DetailFragment"
+        android:label="DetailFragment">
+        <argument
+            android:name="content"
+            app:argType="com.example.volio_test_app.model.Content" />
+    </fragment>
+
+</navigation>
